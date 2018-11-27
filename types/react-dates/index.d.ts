@@ -49,7 +49,7 @@ declare namespace ReactDates {
         // input related props
         startDatePlaceholderText?: string,
         endDatePlaceholderText?: string,
-        disabled?: boolean,
+        disabled?: DisabledShape,
         required?: boolean,
         readOnly?: boolean,
         screenReaderInputMessage?: string,
@@ -181,6 +181,7 @@ declare namespace ReactDates {
           ) => string | JSX.Element,
         orientation?: OrientationShape,
         anchorDirection?: AnchorDirectionShape,
+        openDirection?: OpenDirectionShape,
         horizontalMargin?: number,
         withPortal?: boolean,
         withFullScreenPortal?: boolean,
